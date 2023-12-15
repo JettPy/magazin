@@ -1,0 +1,161 @@
+@import url(./fonts/fonts.css);
+
+.body {
+    position: relative;
+    margin: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+.header__menu-button {
+    padding: 0;
+    border: none;
+    background-color:cornflowerblue;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header__button-img {
+    width: 50px;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 200px;
+    height: 100px;
+    transform: translateX(0%);
+    transition: transform 0.3s linear;
+    border-radius: 5px;
+}
+
+.header__nav_closed {
+    transform: translateX(-100%);
+}
+
+.header__nav-item {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.card-section {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.footer {
+    height: 150px;
+    background-color: lightslategrey;
+}
+
+.card {
+    border-radius: 10px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    margin: 10px auto 20px;
+    display: block;
+    height: 100px;
+}
+
+.card__content {
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title {
+    font-size: 16px;
+}
+
+.card__price {
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+.card__button {
+    margin: 10px auto;
+    border-radius: 2px;
+    border: 2px solid cornflowerblue;
+    background-color: aliceblue;
+    width: 100px;
+    height: 25px;
+}
+
+.overlay {
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 1;
+    transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.overlay_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.popup_closed {
+    display: none;
+}
+
+.popup__content {
+    background-color: cornflowerblue;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__title {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.popup__button {
+    margin-top: 100px;
+    margin: auto;
+    width: 300px;
+    height: 40px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    font-size: 20px;
+}

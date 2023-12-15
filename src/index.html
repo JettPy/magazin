@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин</title>
+</head>
+<body class="body">
+    <header class="header">
+        <button class="header__menu-button"><img class="header__button-img" src="<%=require('./img/menu.svg')%>"></button>
+        <nav class="header__nav">
+            <li class="header__nav-item"><a class="header__link" href="#">Главная</a></li>
+            <li class="header__nav-item"><a class="header__link" href="#">Профиль</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="card-section"></section>
+        <!-- <section> Секция 2 </section> -->
+    </main>
+    <footer class="footer"> Это подвал </footer>
+    <template id="card-template">
+        <div class="card">
+            <img class="card__image">
+            <div class="card__content">
+                <h2 class="card__title"></h2>
+                <p class="card__price"></p>
+            </div>
+            <button class="card__button">В корзину</button>
+        </div>
+    </template>
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup__content">
+                <h2 class="popup__title">Товар добавлен в корзину</h2>
+                <button class="popup__button">Ок</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
